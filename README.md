@@ -2,7 +2,11 @@
 
 A modern, production-ready portfolio website showcasing my journey as a Data Scientist and AI Engineer. Built with React, TypeScript, and Tailwind CSS.
 
-## 🌟 Features
+## � Live Demo
+
+**[View Live Portfolio](https://modern-developer-por-lumd.bolt.host/)**
+
+## �🌟 Features
 
 - **Responsive Design** - Fully responsive across all devices with smooth animations
 - **Modern UI** - Beautiful gradient designs and hover effects using Tailwind CSS
