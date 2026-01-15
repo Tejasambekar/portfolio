@@ -8,10 +8,17 @@ export default function Hero() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center animate-fade-in">
           <div className="mb-8 inline-block">
-            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 p-1 mx-auto animate-pulse-slow">
+            {/* <div className="w-32 h-32 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 p-1 mx-auto animate-pulse-slow">
               <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
                 TA
               </div>
+            </div> */}
+            <div className="w-32 h-32 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 p-1 mx-auto animate-pulse-slow overflow-hidden">
+              <img 
+                src="/professional.jpg" 
+                alt="Tejas Ambekar"
+                className="w-full h-full rounded-full object-cover"
+              />
             </div>
           </div>
 
