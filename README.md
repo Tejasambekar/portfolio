@@ -4,7 +4,7 @@ A modern, production-ready portfolio website showcasing my journey as a Data Sci
 
 ## � Live Demo
 
-**[View Live Portfolio](https://modern-developer-por-lumd.bolt.host/)**
+**[View Live Portfolio]([https://modern-developer-por-lumd.bolt.host/](https://portfolio-7zqcmy1bg-tejas-ambekars-projects.vercel.app/))**
 
 ## �🌟 Features
 
