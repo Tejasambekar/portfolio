@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react';
 
 export default function Hero() {
+  const [imgError, setImgError] = useState(false);
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMyMTk2RjMiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE2djE2SDIwVjE2aDE2em0tMi0ySDIydjIwaDEyVjE0eiIvPjwvZz48L2c+PC9zdmc+')] opacity-20"></div>
@@ -14,11 +17,18 @@ export default function Hero() {
               </div>
             </div> */}
             <div className="w-32 h-32 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 p-1 mx-auto animate-pulse-slow overflow-hidden">
-              <img 
-                src="/professional.jpg" 
-                alt="Tejas Ambekar"
-                className="w-full h-full rounded-full object-cover"
-              />
+              {imgError ? (
+                <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
+                  TA
+                </div>
+              ) : (
+                <img
+                  src="/professional.jpg"
+                  alt="Tejas Ambekar"
+                  className="w-full h-full rounded-full object-cover"
+                  onError={() => setImgError(true)}
+                />
+              )}
             </div>
           </div>
 
