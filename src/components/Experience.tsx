@@ -2,10 +2,21 @@ import { Briefcase, Calendar } from 'lucide-react';
 
 const experiences = [
   {
+    title: 'AI & Data Engineer',
+    company: 'Accuris',
+    period: 'May 2026 - Present',
+    description: 'Engineering knowledge ontologies and data pipelines for AI-powered engineering intelligence',
+    achievements: [
+      'Engineering a domain-specific knowledge ontology for curated data to provide structured context and grounding for downstream AI and LLM applications',
+      'Developed and deployed an operational Python-based microservice, exposing robust API endpoints integrated with data validation and basic testing frameworks',
+      'Designing and implementing a Medallion Architecture (Bronze, Silver, Gold) pipeline to ingest, clean, and standardize unstructured engineering data'
+    ]
+  },
+  {
     title: 'Junior Data Scientist',
     company: 'EPAM Systems',
-    period: 'July 2025 - Present',
-    description: 'Designing and deploying real-time AI solutions for financial data processing',
+    period: 'July 2025 - April 2026',
+    description: 'Designed and deployed real-time AI solutions for financial data processing',
     achievements: [
       'Designed and deployed a real-time, five-stage document intelligence pipeline for financial data with 90% classification accuracy',
       'Implemented core classification engine using Qwen/Qwen2.5-3B-Instruct-AWQ model for high-volume financial documents',
